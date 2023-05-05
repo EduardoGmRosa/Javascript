@@ -22,7 +22,8 @@ section {
 }
 
 section div select {
-    width: 150px
+    width: 150px;
+    overflow: hidden;
     
 }
 
