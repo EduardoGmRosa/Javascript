@@ -21,6 +21,11 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.389);
 }
 
+section div select {
+    width: 150px
+    
+}
+
 footer {
     font-style: italic;
     text-align: center;
