@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Iniciando com DOM</h1>
+    <p>APRENDENDO A USAR <strong>DOM</strong> EM JAVASCRIPT</p>
+    <p>Aqui vai o Resultado!</p>
+    <div id="msg">Clique em mim! </div>
+    <div id="net"> AQUI É A SEGUNDA DIV</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] // Puxar o primeiro <P>
+        var d = window.document.querySelector('div#msg')
+        var d1 = window.document.querySelector('div#net')
+        d1.style.background = 'green'
+        d1.style.color = 'yellow'
+        d.style.background = 'blue'
+        d.innerText = " Olá, Mundo!!"
+        window.document.write(p1.innerHTML) // Puxa a formatação do html
+
+        // var d = window.document.getElementById('msg')
+        // window.document.getElementById('msg').innerHTML = 'Olá, Mundo!' | método não recomendado
+        // window.document.write(d.innerHTML)
+        // window.document.write(p1.innerText)
+        // p1.style.color = 'blue'
+        // corpo.style.background = 'grey'
+        // window.document.write('Olá, Mundo!')
+        // window.document.write(window.document.charset)
+        // window.document.write(window.document.URL)
+    </script>
+</body>
+</html>
